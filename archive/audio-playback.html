@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Playback - Dig4E</title>
+</head>
+<body>
+    
+<svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0 0.49803921568627" type="table"></fefuncr><fefuncg tablevalues="0 0.49803921568627" type="table"></fefuncg><fefuncb tablevalues="0 0.49803921568627" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0 1" type="table"></fefuncr><fefuncg tablevalues="0 1" type="table"></fefuncg><fefuncb tablevalues="0 1" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0.54901960784314 0.98823529411765" type="table"></fefuncr><fefuncg tablevalues="0 1" type="table"></fefuncg><fefuncb tablevalues="0.71764705882353 0.25490196078431" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0 1" type="table"></fefuncr><fefuncg tablevalues="0 0.27843137254902" type="table"></fefuncg><fefuncb tablevalues="0.5921568627451 0.27843137254902" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0 0" type="table"></fefuncr><fefuncg tablevalues="0 0.64705882352941" type="table"></fefuncg><fefuncb tablevalues="0 1" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0.78039215686275 1" type="table"></fefuncr><fefuncg tablevalues="0 0.94901960784314" type="table"></fefuncg><fefuncb tablevalues="0.35294117647059 0.47058823529412" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0.65098039215686 0.40392156862745" type="table"></fefuncr><fefuncg tablevalues="0 1" type="table"></fefuncg><fefuncb tablevalues="0.44705882352941 0.4" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg focusable="false" height="0" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" viewbox="0 0 0 0" width="0" xmlns="http://www.w3.org/2000/svg"><defs><filter><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr tablevalues="0.098039215686275 1" type="table"></fefuncr><fefuncg tablevalues="0 0.66274509803922" type="table"></fefuncg><fefuncb tablevalues="0.84705882352941 0.41960784313725" type="table"></fefuncb><fefunca tablevalues="1 1" type="table"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+<div class="site" id="page">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header id="masthead">
+<div class="container">
+<div class="head-wrap-inner">
+<div>
+<div>
+<a class="custom-logo-link" href="/" rel="home"><img alt="Dig4E" class="custom-logo" decoding="async" height="158" sizes="(max-width: 386px) 100vw, 386px" src="../wp-content/uploads/2019/06/cropped-Screen-Shot-2019-06-06-at-3.44.50-PM.png" srcset="../wp-content/uploads/2019/06/cropped-Screen-Shot-2019-06-06-at-3.44.50-PM.png 386w, ../wp-content/uploads/2019/06/cropped-Screen-Shot-2019-06-06-at-3.44.50-PM-300x123.png 300w" width="386"/></a>
+<h1 class="logo-only-hidden"><a href="/" rel="home">Dig4E</a></h1>
+</div><!-- .site-title-wrap -->
+</div><!-- .site-branding -->
+<div>
+<nav>
+<div><div><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class="mega-toggle-block mega-toggle-block-1" id="mega-toggle-block-1" tabindex="0"><span aria-expanded="false" class="mega-toggle-label" role="button"><span class="mega-toggle-label-closed">MENU</span><span class="mega-toggle-label-open">MENU</span></span></div></div></div><ul class="mega-no-js" data-breakpoint="900" data-document-click="collapse" data-effect="fade_up" data-effect-mobile="slide" data-effect-speed="200" data-effect-speed-mobile="200" data-event="hover_intent" data-hover-intent-interval="100" data-hover-intent-timeout="300" data-mobile-force-width="body" data-mobile-state="collapse_all" data-second-click="go" data-unbind="true" data-vertical-behaviour="accordion"><li class="mega-align-bottom-left"><a href="../about/" tabindex="0">About</a></li><li class="mega-align-bottom-left"><a aria-expanded="false" aria-haspopup="true" href="../image-sub/index/" tabindex="0">Imaging<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li><a href="../image-sub/lessons/">Imagining: Lessons</a></li><li><a href="../image-sub/assignments/">Imaging: Quizzes</a></li></ul>
+</li><li class="mega-align-bottom-left"><a aria-expanded="false" aria-haspopup="true" href="../audio-sub/index/" tabindex="0">Audio<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li><a href="../audio-sub/lessons/">Audio: Lessons</a></li><li><a href="../audio-sub/assignments/">Audio: Quizzes</a></li></ul>
+</li><li class="mega-align-bottom-left"><a aria-expanded="false" aria-haspopup="true" href="../video-sub/index/" tabindex="0">Video<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li><a href="../video-sub/lessons/">Video: Lessons</a></li><li><a href="../video-sub/assignments/">Video: Quizzes</a></li></ul>
+</li><li class="mega-align-bottom-left"><a href="../lessons/" tabindex="0">Lessons</a></li></ul></div> </nav><!-- #site-navigation -->
+<div class="additional-btn navbar-left">
+<div class="navbar-left navbar-btn-right">
+</div>
+</div>
+</div>
+</div>
+</div>
+</header><!-- #masthead -->
+<div id="content">
+<div class="container">
+<div class="inner-wrapper">
+<div class="content-area" id="primary">
+<main id="main">
+<article class="post-1053 page type-page status-publish hentry" id="post-1053">
+<header>
+<h2 class="entry-title">Audio Playback</h2> </header><!-- .entry-header -->
+<div class="entry-content">
+<div data-elementor-id="1053" data-elementor-type="wp-page">
+<div>
+<div>
+<section data-element_type="section" data-id="3f96d4c1">
+<div>
+<div>
+<div data-element_type="column" data-id="49852f8e">
+<div>
+<div>
+<div data-element_type="widget" data-id="565091f5" data-widget_type="button.default">
+<div>
+<div>
+<a href="http://dig4e.sites.uofmhosting.net/audio-media-assessment/" role="button">
+<span>
+<span>Previous</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-element_type="column" data-id="44b6590f">
+<div>
+<div>
+<div data-element_type="widget" data-id="6f1f3a0d" data-widget_type="button.default">
+<div>
+<div>
+<a href="https://dig4e.sites.uofmhosting.net/audio-learning-units" role="button">
+<span>
+<span>All Units</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-element_type="column" data-id="795e42ea">
+<div>
+<div>
+<div data-element_type="widget" data-id="7f326e3a" data-widget_type="button.default">
+<div>
+<div>
+<a href="http://dig4e.sites.uofmhosting.net/analog-to-digital-converters/" role="button">
+<span>
+<span>Next</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-element_type="section" data-id="3c421eb9">
+<div>
+<div>
+<div data-element_type="column" data-id="6be45dc8">
+<div>
+<div>
+<div data-element_type="widget" data-id="5878e5e0" data-widget_type="spacer.default">
+<div>
+<div>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-element_type="section" data-id="1cb24f9b">
+<div>
+<div>
+<div data-element_type="column" data-id="5090fe37">
+<div>
+<div>
+<div data-element_type="widget" data-id="4a883f52" data-widget_type="image.default">
+<div>
+<div>
+<img alt="" class="attachment-thumbnail size-thumbnail" decoding="async" height="150" loading="lazy" sizes="(max-width: 150px) 100vw, 150px" src="../wp-content/uploads/2019/06/sound-system-150x150.png" srcset="../wp-content/uploads/2019/06/sound-system-150x150.png 150w, ../wp-content/uploads/2019/06/sound-system-300x300.png 300w, ../wp-content/uploads/2019/06/sound-system.png 512w" width="150"/> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-element_type="column" data-id="9d1ebfc">
+<div>
+<div>
+<div data-element_type="widget" data-id="1e3f011c" data-widget_type="heading.default">
+<div>
+<h2>5. Audio Playback </h2> </div>
+</div>
+<div data-element_type="widget" data-id="2b5d31e7" data-widget_type="text-editor.default">
+<div>
+<div>
+<p>We learn about the importance of good playback equipment for digitizing analog audio resources. </p> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-element_type="section" data-id="50cb984e">
+<div>
+<div>
+<div data-element_type="column" data-id="47a90e30">
+<div>
+<div>
+</div>
+</div>
+</div>
+<div data-element_type="column" data-id="e5543b3">
+<div>
+<div>
+<div class="su_lightbox" data-element_type="widget" data-id="18c9a2ac" data-widget_type="heading.default">
+<div>
+<h2>Lectures &amp; Instructions</h2> </div>
+</div>
+<div data-element_type="widget" data-id="574ecc12" data-widget_type="text-editor.default">
+<div>
+<div>
+<p><span class="su-lightbox" data-mfp-src="https://www.youtube.com/watch?v=Zx6gr_Ch9x8" data-mfp-type="iframe" data-mobile="yes"> General Principles and challenges of machine dependence of audio </span></p><p style="text-align: left;"><span class="su-lightbox" data-mfp-src="https://www.youtube.com/watch?v=Zx6gr_Ch9x8" data-mfp-type="iframe" data-mobile="yes"> Minimum equipment suggestions for in-house media inspection</span></p> </div>
+</div>
+</div>
+<div data-element_type="widget" data-id="29985963" data-widget_type="heading.default">
+<div>
+<h2>Resources</h2> </div>
+</div>
+<div data-element_type="widget" data-id="23bae505" data-widget_type="text-editor.default">
+<div>
+<div>
+<p>IASA TC-04, sec. 5.3</p><p>IASA TC-04, sec. 5.4</p><p>George Boston, et al. UNESCO guide to minimal equipment (audio)</p><p>Ashley Blewer, et al. Minimum Viable Station Documentation</p><p>Setting up a turntable for playback</p><p>Setting up a reel-to-reel tape recorder for playback</p><p>TAPE. Audio Tape Digitization Workflow</p> </div>
+</div>
+</div>
+<div data-element_type="widget" data-id="a22a676" data-widget_type="heading.default">
+<div>
+<h2>Assignment</h2> </div>
+</div>
+<div data-element_type="widget" data-id="95be1ce" data-widget_type="text-editor.default">
+<div>
+<div>
+<p><span style="font-size: 1rem;">Assignment Case Study: CCAHA - A Race Against Time. Episode 4: Audio Preservation (20:32 min)</span></p> </div>
+</div>
+</div>
+<div data-element_type="widget" data-id="392b8104" data-widget_type="button.default">
+<div>
+<div>
+<a role="button">
+<span>
+<span>Ready for the Unit Quiz?</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-element_type="column" data-id="1fafbbc7">
+<div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-element_type="section" data-id="5bdf847a">
+<div>
+<div>
+<div data-element_type="column" data-id="78da02e8">
+<div>
+<div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div><!-- .entry-content -->
+</article><!-- #post-1053 -->
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- .inner-wrapper -->
+</div><!-- .container -->
+</div><!-- #content -->
+<div>
+<div class="container">
+<div class="inner-wrapper">
+<aside>
+<div class="widget_text widget widget_custom_html" id="custom_html-3"><div class="textwidget custom-html-widget"><a href="../contact-us/" style="color: #ffffff">CONTACT US</a>
+</div></div> </aside>
+<aside>
+<div class="widget_text widget widget_custom_html" id="custom_html-4"><div class="textwidget custom-html-widget"><a href="../privacy/" style="color: #ffffff">PRIVACY</a></div></div> </aside>
+<aside>
+<div class="widget_text widget widget_custom_html" id="custom_html-5"><div class="textwidget custom-html-widget"><a href="../service-level-agreement/" style="color: #ffffff">SERVICE</a></div></div> </aside>
+<aside>
+<div class="widget_text widget widget_custom_html" id="custom_html-6"><div class="textwidget custom-html-widget"><a href="https://www.si.umich.edu/" rel="noopener" target="_blank"><img alt="UMSI Logo" src="../wp-content/uploads/2021/06/logo.png" style="width:200px"/></a><p style="font-size: 10px; color: #ffffff">© 2021 Regents of the University of Michigan</p></div></div> </aside>
+</div>
+</div><!-- .container -->
+</div><!-- #footer-widget-area -->
+<footer id="colophon">
+<div class="container">
+<div class="inner-wrapper">
+</div><!-- .inner-wrapper -->
+</div><!-- .container -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<a class="scrollup" href="#page" id="btn-scrollup"></a><link href="https://www.dig4e.com/wp-content/plugins/shortcodes-ultimate/vendor/magnific-popup/magnific-popup.css?ver=1.1.0" id="magnific-popup-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="../wp-content/plugins/elementor/assets/lib/animations/animations.min_ver-3.9.2.css" id="e-animations-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TC Custom JavaScript -->
+<!-- Shortcodes Ultimate custom CSS - start -->
+
+<!-- Shortcodes Ultimate custom CSS - end -->
+
+</body>
+</html>
