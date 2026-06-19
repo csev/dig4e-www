@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "Dig4E WWW",
+      "path": "."
+    },
+    {
+      "name": "Dig4E Audio",
+      "path": "../dig4e_audio"
+    },
+    {
+      "name": "Dig4E Imaging",
+      "path": "../dig4e_imaging"
+    },
+    {
+      "name": "Dig4E Video",
+      "path": "../dig4e_video"
+    }
+  ],
+  "settings": {}
+}
