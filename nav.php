@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/sites.php';
+
 $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -22,8 +24,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
             Imaging
           </a>
           <ul class="dropdown-menu" aria-labelledby="imagingDropdown">
-            <li><a class="dropdown-item" href="https://image.dig4e.com/lessons/">Imaging: Lessons</a></li>
-            <li><a class="dropdown-item" href="https://image.dig4e.com/assignments/">Imaging: Quizzes</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('imaging', 'lessons/')); ?>">Imaging: Lessons</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('imaging', 'assignments/')); ?>">Imaging: Quizzes</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -32,8 +34,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
             Audio
           </a>
           <ul class="dropdown-menu" aria-labelledby="audioDropdown">
-            <li><a class="dropdown-item" href="https://audio.dig4e.com/lessons/">Audio: Lessons</a></li>
-            <li><a class="dropdown-item" href="https://audio.dig4e.com/assignments/">Audio: Quizzes</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('audio', 'lessons/')); ?>">Audio: Lessons</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('audio', 'assignments/')); ?>">Audio: Quizzes</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -42,8 +44,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
             Video
           </a>
           <ul class="dropdown-menu" aria-labelledby="videoDropdown">
-            <li><a class="dropdown-item" href="https://video.dig4e.com/lessons/">Video: Lessons</a></li>
-            <li><a class="dropdown-item" href="https://video.dig4e.com/assignments/">Video: Quizzes</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('video', 'lessons/')); ?>">Video: Lessons</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('video', 'assignments/')); ?>">Video: Quizzes</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -55,4 +57,4 @@ $current_page = basename($_SERVER['PHP_SELF']);
       </ul>
     </div>
   </div>
-</nav> 
+</nav>
