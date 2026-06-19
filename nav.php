@@ -19,33 +19,33 @@ $current_page = basename($_SERVER['PHP_SELF']);
       <ul class="navbar-nav ms-auto">
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="imagingDropdown" role="button" 
+          <a class="nav-link dropdown-toggle" href="#" id="imagingDropdown" role="button"
              data-bs-toggle="dropdown" aria-expanded="false">
             Imaging
           </a>
           <ul class="dropdown-menu" aria-labelledby="imagingDropdown">
-            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('imaging', 'lessons/')); ?>">Imaging: Lessons</a></li>
-            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('imaging', 'assignments/')); ?>">Imaging: Quizzes</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('imaging')); ?>">Main</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('imaging', 'lessons/')); ?>">Lessons</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="audioDropdown" role="button" 
+          <a class="nav-link dropdown-toggle" href="#" id="audioDropdown" role="button"
              data-bs-toggle="dropdown" aria-expanded="false">
             Audio
           </a>
           <ul class="dropdown-menu" aria-labelledby="audioDropdown">
-            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('audio', 'lessons/')); ?>">Audio: Lessons</a></li>
-            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('audio', 'assignments/')); ?>">Audio: Quizzes</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('audio')); ?>">Main</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('audio', 'lessons/')); ?>">Lessons</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="videoDropdown" role="button" 
+          <a class="nav-link dropdown-toggle" href="#" id="videoDropdown" role="button"
              data-bs-toggle="dropdown" aria-expanded="false">
             Video
           </a>
           <ul class="dropdown-menu" aria-labelledby="videoDropdown">
-            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('video', 'lessons/')); ?>">Video: Lessons</a></li>
-            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('video', 'assignments/')); ?>">Video: Quizzes</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('video')); ?>">Main</a></li>
+            <li><a class="dropdown-item" href="<?php echo htmlspecialchars(dig4e_course_url('video', 'lessons/')); ?>">Lessons</a></li>
           </ul>
         </li>
         <li class="nav-item">
