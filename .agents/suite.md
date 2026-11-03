@@ -6,7 +6,7 @@ This repo is one of four peer Dig4E (Digitization for Everybody) sites. They sha
 
 | Local folder | Production URL | Role |
 |---|---|---|
-| **`dig4e-www`** | https://www.dig4e.com | Hub — marketing, about, lesson index |
+| **`dig4e-www`** | https://www.dig4e.com | Hub — about page plus one Tsugi course catalog |
 | `dig4e_imaging` | https://image.dig4e.com | Imaging course (Tsugi/Koseu) |
 | `dig4e_audio` | https://audio.dig4e.com | Audio course (Tsugi/Koseu) |
 | `dig4e_video` | https://video.dig4e.com | Video course (Tsugi/Koseu) |
@@ -30,6 +30,8 @@ When work touches navigation, lesson links, or cross-site URLs, check the releva
 
 ## Course sites (common pattern)
 
-The three course repos embed **Tsugi** (`tsugi/` is gitignored). Each uses `sanity.php` for install checks, `koseu.php` for LMS routes, and `lessons.json` for content. Site-specific settings live in `tsugi_settings.php`.
+`dig4e-www` embeds **Tsugi** as the catalog that will hold imaging, audio, and video as manifest courses. It uses `tsugi.php` (full Tsugi, not Koseu) and does not have its own `lessons.json`.
+
+The three course repos also embed **Tsugi** (`tsugi/` is gitignored). Each uses `sanity.php` for install checks, `koseu.php` for LMS routes, and `lessons.json` for content. Site-specific settings live in `tsugi_settings.php`.
 
 Do not edit `tsugi/vendor/` — treat Tsugi as an upstream dependency.

@@ -1,0 +1,25 @@
+#
+# Pretty URLs for embedded Tsugi: /about -> about.php, /login -> Tsugi login.
+# Some servers need RewriteBase set to this folder, for example:
+# RewriteBase /dig4e-www
+#
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^config(-dist)?(\.php)?(/.*)?$ - [R=404,L,NS]
+    RewriteRule ^(nav|top|foot|header|buildmenu|sanity|tsugi_settings)\.php$ - [R=404,L,NS]
+    RewriteRule ^ - [E=protossl]
+    RewriteCond %{HTTPS} on
+    RewriteRule ^ - [E=protossl:s]
+    RewriteCond %{REQUEST_URI} !^/\.well-known/
+    RewriteRule "(^|/)\." - [F]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !=/favicon.ico
+    RewriteRule ^ tsugi.php [L]
+    RedirectMatch 404 /\.git
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    FallbackResource tsugi.php
+</IfModule>

@@ -1,7 +1,11 @@
 <?php
 
 /**
- * Base URLs for the three Dig4E course sites.
+ * Base URLs for the three standalone Dig4E course sites.
+ *
+ * The hub menu no longer links here. Imaging, audio, and video are becoming
+ * manifest courses in this site's Tsugi catalog. These helpers remain for
+ * any page that still needs the old hosts.
  *
  * Production uses image/audio/video.dig4e.com. On localhost (or 127.0.0.1),
  * uses sibling folder names under the same host and port as this hub site.
