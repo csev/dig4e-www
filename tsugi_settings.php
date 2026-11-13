@@ -38,6 +38,7 @@ $CFG->google_login_redirect = $CFG->apphome . "/login";
 // The hub is a catalog of manifest courses (imaging, audio, video).
 $CFG->show_courses_widget = true;
 $CFG->show_course_catalog = true;
+$CFG->allow_course_create = true;
 
 $CFG->sessionlifetime = 18*60*60;
 
